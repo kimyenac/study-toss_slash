@@ -1,4 +1,7 @@
+import { ReactNode } from "react";
+
 export type DefaultContentData = {
+  description: string;
   videoLink: string;
   blogLink: string;
   codeLink?: string;
@@ -6,5 +9,6 @@ export type DefaultContentData = {
 
 export type DefaultPageLayoutProps = {
   title: string;
-  contentList: DefaultContentData[];
+  contentList?: DefaultContentData[];
+  children?: ReactNode;
 };
