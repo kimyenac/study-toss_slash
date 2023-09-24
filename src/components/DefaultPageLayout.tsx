@@ -65,6 +65,6 @@ const ContentWrap = styled.div`
   margin-top: 16px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   gap: 24px;
 `;

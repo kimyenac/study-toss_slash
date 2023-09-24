@@ -15,6 +15,7 @@ const DefaultContentsLayout = (contentData: DefaultContentData) => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
       />
+      <Title>{contentData.description}</Title>
       <DescriptionWrap>
         <Description>
           <a href={contentData.blogLink} css={LinkStyle}>
@@ -38,16 +39,23 @@ export default DefaultContentsLayout;
 const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
   width: 30%;
   min-width: 360px;
+`;
+
+const Title = styled.div`
+  color: ${Theme.color.defaultBlackColor};
+  line-height: 140%;
+  font-size: 18px;
+  font-weight: bold;
 `;
 
 const DescriptionWrap = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding-left: 26px;
+  padding-left: 16px;
   color: ${Theme.color.defaultBlackColor};
 `;
 
@@ -55,7 +63,7 @@ const Description = styled.li`
   list-style: disc;
   color: ${Theme.color.defaultBlackColor};
   line-height: 140%;
-  font-size: 16px;
+  font-size: 14px;
 
   :hover {
     color: ${Theme.color.defaultBlueColor};

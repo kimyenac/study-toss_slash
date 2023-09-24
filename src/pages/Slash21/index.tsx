@@ -12,6 +12,12 @@ const Slash21 = () => {
         blogLink: "https://yeroyal.tistory.com/153",
         codeLink: "/slash-21/payment-sdk-example",
       },
+      {
+        description: "Micro-frontend React, 점진적으로 도입하기",
+        videoLink:
+          "https://www.youtube.com/embed/DHPeeEvDbdo?si=JKO0Ninx1Z3LLt-M",
+        blogLink: "https://yeroyal.tistory.com/154",
+      },
     ];
   }, []);
 
