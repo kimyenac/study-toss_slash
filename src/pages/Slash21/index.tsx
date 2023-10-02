@@ -18,6 +18,12 @@ const Slash21 = () => {
           "https://www.youtube.com/embed/DHPeeEvDbdo?si=JKO0Ninx1Z3LLt-M",
         blogLink: "https://yeroyal.tistory.com/154",
       },
+      {
+        description: "토스팀을 위한 슬랙봇 설계",
+        videoLink:
+          "https://www.youtube.com/embed/EChKnpxgX-4?si=I-492m2Oev6EbemR",
+        blogLink: "https://yeroyal.tistory.com/155",
+      },
     ];
   }, []);
 
